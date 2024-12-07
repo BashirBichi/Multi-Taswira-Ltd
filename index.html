@@ -32,26 +32,44 @@ header {
     background-color: #343a40; /* Dark background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+ .navbar {
+            background-color: #343a40; /* Dark background */
+        }
 
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* White text for navbar */
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1); /* Light border for hamburger icon */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .nav-item i {
+            margin-right: 8px; /* Add spacing between the icon and text */
+        }
 /* Navbar Brand Styling */
-.navbar-brand {
+/* .navbar-brand {
     font-size: 1.8rem;
-    font-weight: 700;
-    color: #ffffff; /* White brand text for dark background */
-    text-transform: uppercase;
+    font-weight: 700; */
+/*     color: #ffffff; /* White brand text for dark background */ 
+/*     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
 }
 
 .navbar-brand:hover {
     color: #007bff; /* Blue hover effect for brand name */
-}
+/* } */
 
 /* Navbar Toggler Button */
-.navbar-toggler {
+/* .navbar-toggler {
     border: none;
-    background-color: #007bff; /* Blue color for toggler button */
-}
+    background-color: #007bff; /* Blue color for toggler button */ 
+/* } */
 
 .navbar-toggler-icon {
     filter: brightness(0) invert(1); /* White icon for dark background */
