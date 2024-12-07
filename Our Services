@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        header .nav-link {
+            color: #ffffff !important;
+        }
+
+        .hero {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Services Grid */
+        .services {
+            padding: 40px 0;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card-body h5 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .service-card-body p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .service-card-body a {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .service-card-body a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Multi-Taswira-Services-LTD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>We offer a wide range of solutions tailored to your needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Service 1">
+                        <div class="service-card-body">
+                            <h5>Engineering Solutions</h5>
+                            <p>Innovative and reliable engineering services for all your needs.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Service 2">
+                        <div class="service-card-body">
+                            <h5>Architectural Design</h5>
+                            <p>Creative and sustainable designs for modern architecture.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Service 3">
+                        <div class="service-card-body">
+                            <h5>Project Management</h5>
+                            <p>Efficient planning and execution for successful project delivery.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
