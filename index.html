@@ -540,22 +540,59 @@ footer {
     text-align: left; /* Align text to the left */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center align for smaller screens */
+<style>
+    /* Footer Styling */
+    .footer {
+        font-size: 0.9rem;
     }
 
-    .footer-text {
-        text-align: center; /* Center align text */
-        margin-bottom: 20px; /* Add space below text */
+    .footer h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
-    .footer-logo-img {
-        max-width: 180px; /* Smaller image for mobile */
+    .footer p, .footer ul, .footer li {
+        color: #ccc;
+        margin-bottom: 0.5rem;
     }
-}
+
+    .footer ul {
+        padding: 0;
+    }
+
+    .footer ul li {
+        list-style: none;
+    }
+
+    .footer ul li a {
+        transition: color 0.3s ease;
+    }
+
+    .footer ul li a:hover {
+        color: #007bff;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.2rem;
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer .social-icons a:hover {
+        color: #007bff;
+        transform: scale(1.2);
+    }
+
+    .footer hr {
+        opacity: 0.2;
+    }
+
+    .footer .text-center p {
+        font-size: 0.8rem;
+        color: #bbb;
+    }
+</style>
+
 
 
 
@@ -879,23 +916,54 @@ footer {
         </div>
     </section>
 
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      </a>
-      <img src="./Jobs/logo/logo1-removebg-preview.png" alt="Multi Taswira Services Nig. Ltd." class="footer-logo-img">
-      <span class="mb-3 mb-md-0 text-body-secondary">&copy; All Rights Reserved.</span>
-    </div>
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5 class="text-uppercase mb-4">About Us</h5>
+                <p>
+                    Multi-Taswira-Services-LTD is committed to providing top-notch solutions tailored to meet your needs.
+                    Our expertise includes engineering, architecture, and project management services.
+                </p>
+            </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/> <i class="bi bi-twitter"></i> </svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/><i class="bi bi-instagram"></i></svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/><i class="bi bi-facebook"></i></svg></a></li>
-    </ul>
-  </footer>
-</div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5 class="text-uppercase mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none"><i class="fas fa-angle-right"></i> Home</a></li>
+                    <li><a href="Our Services" class="text-white text-decoration-none"><i class="fas fa-angle-right"></i> Services</a></li>
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right"></i> About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-angle-right"></i> Portfolio</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social Links -->
+            <div class="col-md-4">
+                <h5 class="text-uppercase mb-4">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, City</li>
+                    <li><i class="fas fa-phone-alt"></i> Phone: +123-456-7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: info@multitaswira.com</li>
+                </ul>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Multi-Taswira-Services-LTD. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
 
 
 
