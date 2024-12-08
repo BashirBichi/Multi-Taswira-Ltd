@@ -99,6 +99,42 @@
         .service-card-body a:hover {
             text-decoration: underline;
         }
+        /* Pricing Cards */
+        .pricing {
+            padding: 40px 0;
+        }
+
+        .pricing .card {
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .pricing .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .pricing .card-body {
+            text-align: center;
+        }
+
+        .pricing .pricing-card-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .pricing .btn {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -180,6 +216,66 @@
                             <h5>Project Management</h5>
                             <p>Efficient planning and execution for successful project delivery.</p>
                             <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing Packages</h2>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Initial Consultations</li>
+                                <li>Basic Site Analysis</li>
+                                <li>Email Support</li>
+                                <li>Access to Resources</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-primary w-100">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Professional</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$50<small class="text-muted">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Advanced Site Planning</li>
+                                <li>Project Supervision</li>
+                                <li>Priority Support</li>
+                                <li>Comprehensive Analysis</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary w-100">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$100<small class="text-muted">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Customized Solutions</li>
+                                <li>Dedicated Manager</li>
+                                <li>24/7 Support</li>
+                                <li>On-Site Consultations</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary w-100">Contact Us</button>
                         </div>
                     </div>
                 </div>
