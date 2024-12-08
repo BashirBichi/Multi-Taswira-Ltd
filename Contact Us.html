@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Multi-Taswira-Services-LTD</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Styles -->
+    <style>
+        .contact-header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h5 {
+            font-size: 1.25rem;
+            color: #495057;
+        }
+
+        .contact-info p {
+            color: #6c757d;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .map-container {
+            height: 300px;
+            background: #e9ecef;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: #495057;
+        }
+
+        .btn-custom {
+            background: #343a40;
+            color: #ffffff;
+            transition: background 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: #495057;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Brand Name -->
+                <a href="#" class="navbar-brand">Multi-Taswira-Services-LTD</a>
+                
+                <!-- Navbar Toggler Button (Hamburger) -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Collapsible Navbar Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Our Services"><i class="fas fa-concierge-bell"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="contact-header">Get in Touch</h1>
+                <p>We'd love to hear from you! Reach out to us for inquiries, support, or collaboration.</p>
+            </div>
+
+            <div class="row mt-5">
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h5><i class="fas fa-map-marker-alt"></i> Our Address</h5>
+                        <p>123 Main Street, Business Hub, Cityname</p>
+
+                        <h5 class="mt-4"><i class="fas fa-phone"></i> Call Us</h5>
+                        <p>+123 456 7890</p>
+
+                        <h5 class="mt-4"><i class="fas fa-envelope"></i> Email Us</h5>
+                        <p>info@multi-taswira.com</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="map-container">
+                        Google Maps Integration Here
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Bootstrap and JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
