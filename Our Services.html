@@ -11,39 +11,15 @@
 
     <!-- Custom CSS -->
     <style>
-             /* General Styles */
-        body {
+                 body {
             font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
             color: #333;
         }
 
-/*         header {
-            background-color: #007bff;
-            color: white;
-        }
-
-        header .navbar-brand {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-
-        header .nav-link {
-            color: white !important;
-            font-weight: 500;
-        }
-
-        header .nav-link:hover {
-            color: #ffd700 !important;
-        } */
-
-        /* Hero Section */
         .hero {
-            background: linear-gradient(
-                    rgba(0, 123, 255, 0.8),
-                    rgba(0, 123, 255, 0.6)
-                ),
-                url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)), 
+            url('https://via.placeholder.com/1200x400') center/cover no-repeat;
             color: white;
             padding: 60px 0;
             text-align: center;
@@ -54,76 +30,125 @@
             font-weight: 700;
         }
 
-        .hero p {
-            font-size: 1.3rem;
+        .services-section {
+            padding: 60px 0;
         }
 
-        /* Services Grid */
-        .services {
-            padding: 40px 0;
+        .service-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .service-card {
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-item i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        @keyframes popEffect {
+        0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        50% {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .service-item {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: popEffect 3s infinite;
+    }
+
+    /* Add sequential animation delays for each service-item */
+    .service-item:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .service-item:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .service-item:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    .service-item:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+
+    .service-item:nth-child(5) {
+        animation-delay: 0.8s;
+    }
+
+    .service-item:nth-child(6) {
+        animation-delay: 1s;
+    }
+
+    .service-item:nth-child(7) {
+        animation-delay: 1.2s;
+    }
+
+    .service-item:nth-child(8) {
+        animation-delay: 1.4s;
+    }
+
+    .service-item:nth-child(9) {
+        animation-delay: 1.6s;
+    }
+
+    .service-item i {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .service-item h5 {
+        font-weight: 600;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .service-item p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+        .cta {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .cta button {
+            background-color: #007bff;
+            color: white;
             border: none;
-            border-radius: 8px;
-            background: #fff;
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 12px 24px;
+            font-size: 1rem;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-card img {
-            border-radius: 8px 8px 0 0;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .service-card h5 {
-            color: #007bff;
-            font-weight: 600;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            padding: 40px 0;
-        }
-
-        .pricing .card {
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .pricing .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .pricing .card-header {
-            font-size: 1.5rem;
-            font-weight: bold;
-            background-color: #007bff;
-            color: white;
-        }
-
-        .pricing .card-title {
-            font-size: 2rem;
-            color: #007bff;
-        }
-
-        .pricing .btn {
-            background-color: #007bff;
-            color: white;
-            font-weight: 600;
-        }
-
-        .pricing .btn:hover {
+        .cta button:hover {
             background-color: #0056b3;
         }
-          /* Footer Styling */
     .footer {
         font-size: 0.9rem;
     }
